@@ -1,0 +1,40 @@
+version: '3.7'
+services:
+  arthurw:
+    image: grimoirelab/arthur:worker-0.1.17
+    container_name: arthurw
+    depends_on:
+     - redis
+    links:
+     - "redis:rs"
+    environment:
+     - ARTHUR_DATABASE=redis://rs:6379
+  arthurd:
+    image: grimoirelab/arthur:server-0.1.17
+    container_name: arthurd
+    depends_on:
+     - elasticsearch
+     - redis
+    environment:
+     - ES_INDEX=http://elasticsearch:9200/items
+     - ARTHUR_DATABASE=redis://redis:6379
+    restart: always
+    links:
+     - elasticsearch
+     - redis
+    ports:
+     - "8080:8080"
+    expose:
+     - "8080"
+  redis:
+    image: redis:alpine
+    container_name: redis_arthur
+    ports:
+     - "6379:6379"
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:6.8.4
+    container_name: elasticsearch_arthur
+    environment:
+     - discovery.type=single-node
+    ports:
+     - "9200:9200"

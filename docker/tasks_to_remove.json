@@ -1,0 +1,11 @@
+
+{
+    "tasks": [
+        {
+            "task_id": "bugzilla_mozilla"
+        },
+        {
+            "task_id": "arthur.git"
+        }
+    ]
+}
