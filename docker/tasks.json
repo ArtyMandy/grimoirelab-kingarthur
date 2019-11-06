@@ -6,6 +6,8 @@
             "backend_args": {
                 "gitpath": "/tmp/git/arthur.git/",
                 "uri": "https://github.com/chaoss/grimoirelab-kingarthur.git",
+                "owner": "chaoss",
+                "repo": "grimoirelab-kingarthur"
                 "from_date": "2015-10-21"
             },
             "category": "commit",

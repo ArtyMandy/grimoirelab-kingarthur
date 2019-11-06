@@ -1,7 +1,7 @@
-version: '3.7'
+version: '3.3'
 services:
   arthurw:
-    image: grimoirelab/arthur:worker-0.1.17
+    image: grimoirelab/arthur:worker-0.1.18
     container_name: arthurw
     depends_on:
      - redis
@@ -10,7 +10,7 @@ services:
     environment:
      - ARTHUR_DATABASE=redis://rs:6379
   arthurd:
-    image: grimoirelab/arthur:server-0.1.17
+    image: grimoirelab/arthur:server-0.1.18
     container_name: arthurd
     depends_on:
      - elasticsearch

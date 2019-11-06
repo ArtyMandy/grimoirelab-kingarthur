@@ -1,0 +1,19 @@
+{
+    "tasks": [
+      {
+          "task_id": "arthur.git",
+          "backend": "github",
+          "backend_args": {
+              "gitpath": "/tmp/git/arthur.git/",
+              "owner": "chaoss",
+              "repository": "grimoirelab-kingarthur",
+              "api_token": "ef8fdb73a431ac36f23e2f0aad46f01fbb4b5cfc",
+              "from_date": "2015-10-21"
+          },
+          "category": "issue",
+          "scheduler": {
+              "delay": 0
+          }
+        }
+      ]
+}

@@ -50,7 +50,8 @@ ENV \
   LANG="en_US.UTF-8" \
   LANGUAGE="en_US:en" \
   LC_ALL="en_US.UTF-8" \
-  LANG="C.UTF-8"
+  LANG="C.UTF-8" \
+  ES_INDEX="127.0.0.1:9200/items"
 
 COPY --chown=arthur . /arthur
 
@@ -61,7 +62,6 @@ USER arthur
 RUN \
   mkdir /arthur/logs && \
   pip3 install setuptools && \
-  pip3 install --no-cache-dir --upgrade pip && \
   pip3 install --no-cache-dir --user -r requirements.txt && \
   python3 setup.py install --user
 
@@ -70,5 +70,5 @@ VOLUME ["/tmp", "/arthur/logs"]
 
 ENTRYPOINT [\
   "/bin/sh", "-c", \
-  "python3 bin/arthurd --no-daemon --host ${ARTHUR_HOST} --port ${ARTHUR_PORT} --database ${ARTHUR_DATABASE} --log-path ${ARTHUR_LOGS_DIR} --sync"\
+  "python3 bin/arthurd --no-daemon -g --es-index ${ES_INDEX} --host ${ARTHUR_HOST} --port ${ARTHUR_PORT} --database ${ARTHUR_DATABASE} --log-path ${ARTHUR_LOGS_DIR} --sync"\
   ]
