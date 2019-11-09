@@ -1,0 +1,655 @@
+{
+  "took": 68,
+  "timed_out": false,
+  "_shards": {
+    "total": 5,
+    "successful": 5,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": 21,
+    "max_score": 0.18232156,
+    "hits": [
+      {
+        "_index": "items",
+        "_type": "items",
+        "_id": "2de6a7fe876b876319b4cb5bf448c249b1e0f18b",
+        "_score": 0.18232156,
+        "_source": {
+          "job_id": "a6ae1960-ee9d-4448-a439-cb09851d5ff7",
+          "backend_version": "0.12.0",
+          "search_fields": {
+            "item_id": "96a060ee1beb2685882bb60522da0825950a2f2e"
+          },
+          "perceval_version": "0.12.24",
+          "data": {
+            "refs": [],
+            "commit": "96a060ee1beb2685882bb60522da0825950a2f2e",
+            "Commit": "Santiago Dueñas <sduenas@bitergia.com>",
+            "Author": "Valerio Cosentino <valcos@bitergia.com>",
+            "CommitDate": "Tue Oct 22 15:01:34 2019 +0200",
+            "files": [
+              {
+                "action": "M",
+                "indexes": [
+                  "19279c6...",
+                  "15d563a..."
+                ],
+                "file": "bin/arthurd",
+                "modes": [
+                  "100644",
+                  "100644"
+                ],
+                "removed": "0",
+                "added": "2"
+              }
+            ],
+            "message": "[arthurd] Add ignoring log-path msg when no-daemon is on\n\nThis code adds an info message about ignoring the log path folder\nwhen the no-daemon param is on.\n\nSigned-off-by: Valerio Cosentino <valcos@bitergia.com>",
+            "Signed-off-by": [
+              "Valerio Cosentino <valcos@bitergia.com>"
+            ],
+            "parents": [
+              "0d6672aee79f37a1f2b1abc46a7a2cc849ae1ab3"
+            ],
+            "AuthorDate": "Tue Oct 22 14:42:03 2019 +0200"
+          },
+          "classified_fields_filtered": null,
+          "uuid": "2de6a7fe876b876319b4cb5bf448c249b1e0f18b",
+          "category": "commit",
+          "timestamp": 1573311604.869105,
+          "origin": "https://github.com/chaoss/grimoirelab-kingarthur.git",
+          "backend_name": "Git",
+          "arthur_version": "0.1.18",
+          "tag": "https://github.com/chaoss/grimoirelab-kingarthur.git",
+          "updated_on": 1571749294
+        }
+      },
+      {
+        "_index": "items",
+        "_type": "items",
+        "_id": "51daf10b4d9647a9fe343f402988ca8f1ae9b04c",
+        "_score": 0.18232156,
+        "_source": {
+          "job_id": "a6ae1960-ee9d-4448-a439-cb09851d5ff7",
+          "backend_version": "0.12.0",
+          "search_fields": {
+            "item_id": "b79dc879d0732f0c3fff5e0f8fb1ed6e5e5710ab"
+          },
+          "perceval_version": "0.12.24",
+          "data": {
+            "Merge": "b13b176 f7cdcfb",
+            "refs": [],
+            "commit": "b79dc879d0732f0c3fff5e0f8fb1ed6e5e5710ab",
+            "Commit": "Valerio Cosentino <valcos@bitergia.com>",
+            "Author": "Valerio Cosentino <valcos@bitergia.com>",
+            "CommitDate": "Wed Oct 23 09:53:42 2019 +0200",
+            "files": [
+              {
+                "removed": "9",
+                "added": "15",
+                "file": "arthur/jobs.py"
+              },
+              {
+                "removed": "0",
+                "added": "2",
+                "file": "arthur/scheduler.py"
+              },
+              {
+                "removed": "0",
+                "added": "1",
+                "file": "arthur/server.py"
+              },
+              {
+                "removed": "16",
+                "added": "37",
+                "file": "tests/test_jobs.py"
+              },
+              {
+                "removed": "17",
+                "added": "62",
+                "file": "tests/test_scheduler.py"
+              },
+              {
+                "removed": "0",
+                "added": "2",
+                "file": "tests/test_server.py"
+              }
+            ],
+            "message": "Merge branch 'human-readable-job-ids' of 'https://github.com/sduenas/arthur'\n\nMerges #96",
+            "parents": [
+              "b13b1763d0b63158962f0757232a1dd9e57ddd6c",
+              "f7cdcfb0ad0ccb56a052984d4b30004af305389f"
+            ],
+            "AuthorDate": "Wed Oct 23 09:53:42 2019 +0200"
+          },
+          "classified_fields_filtered": null,
+          "uuid": "51daf10b4d9647a9fe343f402988ca8f1ae9b04c",
+          "category": "commit",
+          "timestamp": 1573311604.871651,
+          "origin": "https://github.com/chaoss/grimoirelab-kingarthur.git",
+          "backend_name": "Git",
+          "arthur_version": "0.1.18",
+          "tag": "https://github.com/chaoss/grimoirelab-kingarthur.git",
+          "updated_on": 1571817222
+        }
+      },
+      {
+        "_index": "items",
+        "_type": "items",
+        "_id": "8135d456ed102d03e39d70d2f18833c3b8a84a30",
+        "_score": 0.105360515,
+        "_source": {
+          "job_id": "a6ae1960-ee9d-4448-a439-cb09851d5ff7",
+          "backend_version": "0.12.0",
+          "search_fields": {
+            "item_id": "c7e6e463f9549deab15f38aa85f0ce7466a9e244"
+          },
+          "perceval_version": "0.12.24",
+          "data": {
+            "Merge": "70ee56c 26608c5",
+            "refs": [],
+            "commit": "c7e6e463f9549deab15f38aa85f0ce7466a9e244",
+            "Commit": "Santiago Dueñas <sduenas@bitergia.com>",
+            "Author": "Santiago Dueñas <sduenas@bitergia.com>",
+            "CommitDate": "Sun Oct 20 17:52:49 2019 +0200",
+            "files": [
+              {
+                "removed": "2",
+                "added": "2",
+                "file": "README.md"
+              },
+              {
+                "removed": "112",
+                "added": "74",
+                "file": "arthur/jobs.py"
+              },
+              {
+                "removed": "10",
+                "added": "8",
+                "file": "arthur/scheduler.py"
+              },
+              {
+                "removed": "2",
+                "added": "2",
+                "file": "setup.py"
+              },
+              {
+                "removed": "157",
+                "added": "84",
+                "file": "tests/test_jobs.py"
+              },
+              {
+                "removed": "42",
+                "added": "182",
+                "file": "tests/test_scheduler.py"
+              },
+              {
+                "removed": "3",
+                "added": "9",
+                "file": "tests/test_server.py"
+              }
+            ],
+            "message": "Merge branch 'perceval-summary' of 'https://github.com/sduenas/arthur'\n\nMerges #81\nCloses #81\nFixes #75",
+            "parents": [
+              "70ee56c38d32d0c6b3020cc715408bc2b4759333",
+              "26608c50bb57eae6e9b86db5c23b07e05112545e"
+            ],
+            "AuthorDate": "Sun Oct 20 17:52:49 2019 +0200"
+          },
+          "classified_fields_filtered": null,
+          "uuid": "8135d456ed102d03e39d70d2f18833c3b8a84a30",
+          "category": "commit",
+          "timestamp": 1573311604.861617,
+          "origin": "https://github.com/chaoss/grimoirelab-kingarthur.git",
+          "backend_name": "Git",
+          "arthur_version": "0.1.18",
+          "tag": "https://github.com/chaoss/grimoirelab-kingarthur.git",
+          "updated_on": 1571586769
+        }
+      },
+      {
+        "_index": "items",
+        "_type": "items",
+        "_id": "babccfbd098bbaae31c0f2b5164bc1db801434b0",
+        "_score": 0.105360515,
+        "_source": {
+          "job_id": "a6ae1960-ee9d-4448-a439-cb09851d5ff7",
+          "backend_version": "0.12.0",
+          "search_fields": {
+            "item_id": "5d45e7f02e694b5fe046f94416dea32d7a392d74"
+          },
+          "perceval_version": "0.12.24",
+          "data": {
+            "Merge": "8806a3d 80a054a",
+            "refs": [],
+            "commit": "5d45e7f02e694b5fe046f94416dea32d7a392d74",
+            "Commit": "Santiago Dueñas <sduenas@bitergia.com>",
+            "Author": "Santiago Dueñas <sduenas@bitergia.com>",
+            "CommitDate": "Wed Oct 23 13:03:17 2019 +0200",
+            "files": [
+              {
+                "removed": "3",
+                "added": "3",
+                "file": "arthur/scheduler.py"
+              },
+              {
+                "removed": "17",
+                "added": "17",
+                "file": "tests/test_jobs.py"
+              }
+            ],
+            "message": "Merge branch 'update_job_ids_schema' of 'https://github.com/mafesan/grimoirelab-kingarthur.git'\n\nMerges #97\nCloses #97\nFixes #83",
+            "parents": [
+              "8806a3d0d0e244e7285e6e260860241b2f155f7b",
+              "80a054a10862c4f962b53ecaeb45149dcbf31aa6"
+            ],
+            "AuthorDate": "Wed Oct 23 13:03:17 2019 +0200"
+          },
+          "classified_fields_filtered": null,
+          "uuid": "babccfbd098bbaae31c0f2b5164bc1db801434b0",
+          "category": "commit",
+          "timestamp": 1573311604.874567,
+          "origin": "https://github.com/chaoss/grimoirelab-kingarthur.git",
+          "backend_name": "Git",
+          "arthur_version": "0.1.18",
+          "tag": "https://github.com/chaoss/grimoirelab-kingarthur.git",
+          "updated_on": 1571828597
+        }
+      },
+      {
+        "_index": "items",
+        "_type": "items",
+        "_id": "b960c1e658164d9146c718e188bcd5a3c93e3d77",
+        "_score": 0.105360515,
+        "_source": {
+          "job_id": "a6ae1960-ee9d-4448-a439-cb09851d5ff7",
+          "backend_version": "0.12.0",
+          "search_fields": {
+            "item_id": "7c0ec65e14994dd50d3f773140e2d079f2a9a985"
+          },
+          "perceval_version": "0.12.24",
+          "data": {
+            "refs": [],
+            "commit": "7c0ec65e14994dd50d3f773140e2d079f2a9a985",
+            "Commit": "Valerio Cosentino <valcos@bitergia.com>",
+            "Author": "Valerio Cosentino <valcos@bitergia.com>",
+            "CommitDate": "Mon Oct 28 14:53:53 2019 +0100",
+            "files": [
+              {
+                "action": "M",
+                "indexes": [
+                  "694f32f...",
+                  "6997393..."
+                ],
+                "file": "arthur/_version.py",
+                "modes": [
+                  "100644",
+                  "100644"
+                ],
+                "removed": "1",
+                "added": "1"
+              }
+            ],
+            "message": "Update version number 0.1.18\n\nSigned-off-by: Valerio Cosentino <valcos@bitergia.com>",
+            "Signed-off-by": [
+              "Valerio Cosentino <valcos@bitergia.com>"
+            ],
+            "parents": [
+              "5d45e7f02e694b5fe046f94416dea32d7a392d74"
+            ],
+            "AuthorDate": "Mon Oct 28 14:53:53 2019 +0100"
+          },
+          "classified_fields_filtered": null,
+          "uuid": "b960c1e658164d9146c718e188bcd5a3c93e3d77",
+          "category": "commit",
+          "timestamp": 1573311604.875195,
+          "origin": "https://github.com/chaoss/grimoirelab-kingarthur.git",
+          "backend_name": "Git",
+          "arthur_version": "0.1.18",
+          "tag": "https://github.com/chaoss/grimoirelab-kingarthur.git",
+          "updated_on": 1572270833
+        }
+      },
+      {
+        "_index": "items",
+        "_type": "items",
+        "_id": "fc3ad38baea7abc46f2dcbf057ead75bdcc192a4",
+        "_score": 0.105360515,
+        "_source": {
+          "job_id": "a6ae1960-ee9d-4448-a439-cb09851d5ff7",
+          "backend_version": "0.12.0",
+          "search_fields": {
+            "item_id": "9e2429b4e0ea86226cfa18475292055917f189c8"
+          },
+          "perceval_version": "0.12.24",
+          "data": {
+            "refs": [],
+            "commit": "9e2429b4e0ea86226cfa18475292055917f189c8",
+            "Commit": "Santiago Dueñas <sduenas@bitergia.com>",
+            "Author": "David Moreno <dmoreno@bitergia.com>",
+            "CommitDate": "Thu Nov 7 11:16:15 2019 +0100",
+            "files": [
+              {
+                "action": "M",
+                "indexes": [
+                  "bbf4015...",
+                  "f43f26d..."
+                ],
+                "file": "arthur/scheduler.py",
+                "modes": [
+                  "100644",
+                  "100644"
+                ],
+                "removed": "7",
+                "added": "9"
+              }
+            ],
+            "message": "[scheduler] Save job_number in the meta field of the job enqueued\n\nThis commits adds the funcionality of saving the job_number\nidentifier in the metadata of the job in order to avoid future\nerrors when retrieving them using CherryPy and the Job class\nfrom RQ.\n\nSigned-off-by: David Moreno <dmoreno@bitergia.com>",
+            "Signed-off-by": [
+              "David Moreno <dmoreno@bitergia.com>"
+            ],
+            "parents": [
+              "7c0ec65e14994dd50d3f773140e2d079f2a9a985"
+            ],
+            "AuthorDate": "Wed Oct 23 17:21:32 2019 +0200"
+          },
+          "classified_fields_filtered": null,
+          "uuid": "fc3ad38baea7abc46f2dcbf057ead75bdcc192a4",
+          "category": "commit",
+          "timestamp": 1573311604.87594,
+          "origin": "https://github.com/chaoss/grimoirelab-kingarthur.git",
+          "backend_name": "Git",
+          "arthur_version": "0.1.18",
+          "tag": "https://github.com/chaoss/grimoirelab-kingarthur.git",
+          "updated_on": 1573121775
+        }
+      },
+      {
+        "_index": "items",
+        "_type": "items",
+        "_id": "d504c0c0a395a03fafdbc73ea1965836edcdc70f",
+        "_score": 0.105360515,
+        "_source": {
+          "job_id": "a6ae1960-ee9d-4448-a439-cb09851d5ff7",
+          "backend_version": "0.12.0",
+          "search_fields": {
+            "item_id": "60b05a913cc32d067d5435e74e5143ceba880609"
+          },
+          "perceval_version": "0.12.24",
+          "data": {
+            "Merge": "30b62a6 cc76bc3",
+            "refs": [],
+            "commit": "60b05a913cc32d067d5435e74e5143ceba880609",
+            "Commit": "Santiago Dueñas <sduenas@bitergia.com>",
+            "Author": "Santiago Dueñas <sduenas@bitergia.com>",
+            "CommitDate": "Tue Oct 22 13:14:18 2019 +0200",
+            "files": [
+              {
+                "removed": "218",
+                "added": "0",
+                "file": "bin/arthur"
+              },
+              {
+                "removed": "1",
+                "added": "0",
+                "file": "setup.py"
+              }
+            ],
+            "message": "Merge branch 'remove_arthur_script' of 'https://github.com/mafesan/grimoirelab-kingarthur'\n\nMerges #89\nCloses #89\nFixes #86",
+            "parents": [
+              "30b62a681a28fa91a76b1b26cc3515b71c287d85",
+              "cc76bc3d74b83b09957efe7731ffc7bd819320b0"
+            ],
+            "AuthorDate": "Tue Oct 22 13:14:18 2019 +0200"
+          },
+          "classified_fields_filtered": null,
+          "uuid": "d504c0c0a395a03fafdbc73ea1965836edcdc70f",
+          "category": "commit",
+          "timestamp": 1573311604.867571,
+          "origin": "https://github.com/chaoss/grimoirelab-kingarthur.git",
+          "backend_name": "Git",
+          "arthur_version": "0.1.18",
+          "tag": "https://github.com/chaoss/grimoirelab-kingarthur.git",
+          "updated_on": 1571742858
+        }
+      },
+      {
+        "_index": "items",
+        "_type": "items",
+        "_id": "a887e8399e009cf34ca0e9639756067a29f7efb5",
+        "_score": 0.105360515,
+        "_source": {
+          "job_id": "a6ae1960-ee9d-4448-a439-cb09851d5ff7",
+          "backend_version": "0.12.0",
+          "search_fields": {
+            "item_id": "b13b1763d0b63158962f0757232a1dd9e57ddd6c"
+          },
+          "perceval_version": "0.12.24",
+          "data": {
+            "Merge": "60b05a9 96a060e",
+            "refs": [],
+            "commit": "b13b1763d0b63158962f0757232a1dd9e57ddd6c",
+            "Commit": "Santiago Dueñas <sduenas@bitergia.com>",
+            "Author": "Santiago Dueñas <sduenas@bitergia.com>",
+            "CommitDate": "Tue Oct 22 15:03:02 2019 +0200",
+            "files": [
+              {
+                "removed": "18",
+                "added": "31",
+                "file": "bin/arthurd"
+              }
+            ],
+            "message": "Merge branch 'issue-85' of 'https://github.com/valeriocos/arthur'\n\nMerges #91\nCloses #91\nFixes #85",
+            "parents": [
+              "60b05a913cc32d067d5435e74e5143ceba880609",
+              "96a060ee1beb2685882bb60522da0825950a2f2e"
+            ],
+            "AuthorDate": "Tue Oct 22 15:03:02 2019 +0200"
+          },
+          "classified_fields_filtered": null,
+          "uuid": "a887e8399e009cf34ca0e9639756067a29f7efb5",
+          "category": "commit",
+          "timestamp": 1573311604.86983,
+          "origin": "https://github.com/chaoss/grimoirelab-kingarthur.git",
+          "backend_name": "Git",
+          "arthur_version": "0.1.18",
+          "tag": "https://github.com/chaoss/grimoirelab-kingarthur.git",
+          "updated_on": 1571749382
+        }
+      },
+      {
+        "_index": "items",
+        "_type": "items",
+        "_id": "82e0b223d2b4386a65a7eac0dc7f08a3b414bb00",
+        "_score": 0.105360515,
+        "_source": {
+          "job_id": "a6ae1960-ee9d-4448-a439-cb09851d5ff7",
+          "backend_version": "0.12.0",
+          "search_fields": {
+            "item_id": "ee417d9e58eabfee139fd0b90d94fd3bf8393910"
+          },
+          "perceval_version": "0.12.24",
+          "data": {
+            "refs": [],
+            "commit": "ee417d9e58eabfee139fd0b90d94fd3bf8393910",
+            "Commit": "Santiago Dueñas <sduenas@bitergia.com>",
+            "Author": "Valerio Cosentino <valcos@bitergia.com>",
+            "CommitDate": "Wed Oct 23 10:26:49 2019 +0200",
+            "files": [
+              {
+                "action": "M",
+                "indexes": [
+                  "03a05fc...",
+                  "d3ec81d..."
+                ],
+                "file": "requirements.txt",
+                "modes": [
+                  "100644",
+                  "100644"
+                ],
+                "removed": "3",
+                "added": "3"
+              },
+              {
+                "action": "M",
+                "indexes": [
+                  "02933b9...",
+                  "5237ae4..."
+                ],
+                "file": "setup.py",
+                "modes": [
+                  "100755",
+                  "100755"
+                ],
+                "removed": "3",
+                "added": "3"
+              }
+            ],
+            "message": "[setup] Update dependencies\n\nThis code updates the following dependencies:\n- python-dateutil>=2.8.0\n- cherrypy>=17.4.2\n- cheroot>=8.2.1\n\nSigned-off-by: Valerio Cosentino <valcos@bitergia.com>",
+            "Signed-off-by": [
+              "Valerio Cosentino <valcos@bitergia.com>"
+            ],
+            "parents": [
+              "b79dc879d0732f0c3fff5e0f8fb1ed6e5e5710ab"
+            ],
+            "AuthorDate": "Tue Oct 22 17:02:29 2019 +0200"
+          },
+          "classified_fields_filtered": null,
+          "uuid": "82e0b223d2b4386a65a7eac0dc7f08a3b414bb00",
+          "category": "commit",
+          "timestamp": 1573311604.872262,
+          "origin": "https://github.com/chaoss/grimoirelab-kingarthur.git",
+          "backend_name": "Git",
+          "arthur_version": "0.1.18",
+          "tag": "https://github.com/chaoss/grimoirelab-kingarthur.git",
+          "updated_on": 1571819209
+        }
+      },
+      {
+        "_index": "items",
+        "_type": "items",
+        "_id": "f0de1e0745d73f4987b29c1d93a25ee1b4c6a576",
+        "_score": 0.105360515,
+        "_source": {
+          "job_id": "a6ae1960-ee9d-4448-a439-cb09851d5ff7",
+          "backend_version": "0.12.0",
+          "search_fields": {
+            "item_id": "5355714bb503a3fb328d9f4e6b28b9e4ec016c8a"
+          },
+          "perceval_version": "0.12.24",
+          "data": {
+            "refs": [],
+            "commit": "5355714bb503a3fb328d9f4e6b28b9e4ec016c8a",
+            "Commit": "David Moreno <dmoreno@bitergia.com>",
+            "Author": "David Moreno <dmoreno@bitergia.com>",
+            "CommitDate": "Fri Nov 8 18:05:40 2019 +0100",
+            "files": [
+              {
+                "action": "M",
+                "indexes": [
+                  "f43f26d...",
+                  "06f483a..."
+                ],
+                "file": "arthur/scheduler.py",
+                "modes": [
+                  "100644",
+                  "100644"
+                ],
+                "removed": "1",
+                "added": "1"
+              },
+              {
+                "action": "M",
+                "indexes": [
+                  "de37456...",
+                  "c56437a..."
+                ],
+                "file": "arthur/server.py",
+                "modes": [
+                  "100644",
+                  "100644"
+                ],
+                "removed": "2",
+                "added": "3"
+              },
+              {
+                "action": "M",
+                "indexes": [
+                  "118f485...",
+                  "e82c223..."
+                ],
+                "file": "arthur/tasks.py",
+                "modes": [
+                  "100644",
+                  "100644"
+                ],
+                "removed": "1",
+                "added": "14"
+              },
+              {
+                "action": "M",
+                "indexes": [
+                  "6898bc7...",
+                  "ccbb6e3..."
+                ],
+                "file": "tests/test_scheduler.py",
+                "modes": [
+                  "100644",
+                  "100644"
+                ],
+                "removed": "3",
+                "added": "3"
+              },
+              {
+                "action": "M",
+                "indexes": [
+                  "428b744...",
+                  "157016e..."
+                ],
+                "file": "tests/test_server.py",
+                "modes": [
+                  "100644",
+                  "100644"
+                ],
+                "removed": "0",
+                "added": "1"
+              },
+              {
+                "action": "M",
+                "indexes": [
+                  "d2df848...",
+                  "89b7230..."
+                ],
+                "file": "tests/test_tasks.py",
+                "modes": [
+                  "100644",
+                  "100644"
+                ],
+                "removed": "3",
+                "added": "32"
+              }
+            ],
+            "message": "[tasks] Add JobData tuple to store jobs in the task job list\n\nIn order to return the job_number field and the job_id identifier,\nthis tuple is created with the goal of store more than the\nidentifier in the task job list. Thus, when the server querys the\ntasks, it will return a list of JobData objects that contains the\njob_number field and the job_id identifier.\n\nThis commit affects to the scheduler and server as well.\n\nSigned-off-by: David Moreno <dmoreno@bitergia.com>",
+            "Signed-off-by": [
+              "David Moreno <dmoreno@bitergia.com>"
+            ],
+            "parents": [
+              "0f679e8f7ffb8ac8ffb0b7b2101dfbdec04fbda1"
+            ],
+            "AuthorDate": "Fri Nov 8 14:49:27 2019 +0100"
+          },
+          "classified_fields_filtered": null,
+          "uuid": "f0de1e0745d73f4987b29c1d93a25ee1b4c6a576",
+          "category": "commit",
+          "timestamp": 1573311604.878084,
+          "origin": "https://github.com/chaoss/grimoirelab-kingarthur.git",
+          "backend_name": "Git",
+          "arthur_version": "0.1.18",
+          "tag": "https://github.com/chaoss/grimoirelab-kingarthur.git",
+          "updated_on": 1573232740
+        }
+      }
+    ]
+  }
+}

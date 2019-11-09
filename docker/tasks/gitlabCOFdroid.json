@@ -1,0 +1,17 @@
+{
+    "tasks": [
+      {
+          "task_id": "fdroidCO.gitlab",
+          "backend": "git",
+          "backend_args": {
+              "gitpath": "/tmp/git/fdroidCO.gitlab",
+              "uri": "https://gitlab.com/fdroid/fdroiddata.git",
+              "from_date": "2019-10-20"
+          },
+          "category": "commit",
+          "scheduler": {
+              "delay": 0
+          }
+      }
+      ]
+}

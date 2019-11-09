@@ -1,0 +1,17 @@
+{
+    "tasks": [
+      {
+          "task_id": "quartCO.gitlab",
+          "backend": "git",
+          "backend_args": {
+              "gitpath": "/tmp/git/quartCO.gitlab",
+              "uri": "https://gitlab.com/pgjones/quart.git",
+              "from_date": "2019-11-01"
+          },
+          "category": "commit",
+          "scheduler": {
+              "delay": 0
+          }
+      }
+      ]
+}

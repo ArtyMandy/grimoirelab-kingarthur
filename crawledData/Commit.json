@@ -1,0 +1,54 @@
+{
+  "_index": "items",
+  "_type": "items",
+  "_id": "2de6a7fe876b876319b4cb5bf448c249b1e0f18b",
+  "_score": 0.18232156,
+  "_source": {
+    "job_id": "a6ae1960-ee9d-4448-a439-cb09851d5ff7",
+    "backend_version": "0.12.0",
+    "search_fields": {
+      "item_id": "96a060ee1beb2685882bb60522da0825950a2f2e"
+    },
+    "perceval_version": "0.12.24",
+    "data": {
+      "refs": [],
+      "commit": "96a060ee1beb2685882bb60522da0825950a2f2e",
+      "Commit": "Santiago Dueñas <sduenas@bitergia.com>",
+      "Author": "Valerio Cosentino <valcos@bitergia.com>",
+      "CommitDate": "Tue Oct 22 15:01:34 2019 +0200",
+      "files": [
+        {
+          "action": "M",
+          "indexes": [
+            "19279c6...",
+            "15d563a..."
+          ],
+          "file": "bin/arthurd",
+          "modes": [
+            "100644",
+            "100644"
+          ],
+          "removed": "0",
+          "added": "2"
+        }
+      ],
+      "message": "[arthurd] Add ignoring log-path msg when no-daemon is on\n\nThis code adds an info message about ignoring the log path folder\nwhen the no-daemon param is on.\n\nSigned-off-by: Valerio Cosentino <valcos@bitergia.com>",
+      "Signed-off-by": [
+        "Valerio Cosentino <valcos@bitergia.com>"
+      ],
+      "parents": [
+        "0d6672aee79f37a1f2b1abc46a7a2cc849ae1ab3"
+      ],
+      "AuthorDate": "Tue Oct 22 14:42:03 2019 +0200"
+    },
+    "classified_fields_filtered": null,
+    "uuid": "2de6a7fe876b876319b4cb5bf448c249b1e0f18b",
+    "category": "commit",
+    "timestamp": 1573311604.869105,
+    "origin": "https://github.com/chaoss/grimoirelab-kingarthur.git",
+    "backend_name": "Git",
+    "arthur_version": "0.1.18",
+    "tag": "https://github.com/chaoss/grimoirelab-kingarthur.git",
+    "updated_on": 1571749294
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "tasks": [
+    {
+      "task_id": "arthurCO.github",
+      "backend": "git",
+      "backend_args": {
+        "gitpath": "/tmp/git/arthurCO.github",
+        "uri": "https://github.com/chaoss/grimoirelab-kingarthur.git",
+        "from_date": "2019-10-20"
+      },
+      "category": "commit",
+      "scheduler": {
+        "delay": 1
+      }
+    }
+  ]
+}

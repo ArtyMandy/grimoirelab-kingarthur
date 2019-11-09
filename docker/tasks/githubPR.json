@@ -1,0 +1,21 @@
+{
+    "tasks": [
+      {
+          "task_id": "arthurPR.github",
+          "backend": "github",
+          "backend_args": {
+              "api_token": [ "8dfab93fd2f78dcb999af446c80e5d44747b0a4e" ],
+              "owner": "chaoss",
+              "repository": "grimoirelab-kingarthur",
+              "from_date": "2019-10-01",
+              "sleep_for_rate": "true",
+              "archive": "archive",
+              "sleep_time": 2
+          },
+          "category": "pull_request",
+          "scheduler": {
+              "delay": 0
+          }
+      }
+]
+}

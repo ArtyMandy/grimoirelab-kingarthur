@@ -1,0 +1,17 @@
+{
+  "tasks": [
+    {
+      "task_id": "grimoirelabmailinglist",
+      "backend": "pipermail",
+      "backend_args": {
+        "dirpath": "/tmp/git/grimoirelabmailinglist",
+        "url": "https://lists.linuxfoundation.org/pipermail/grimoirelab-discussions/",
+        "from_date": "2019-01-01"
+      },
+      "category": "message",
+      "scheduler": {
+        "delay": 1
+      }
+    }
+  ]
+}

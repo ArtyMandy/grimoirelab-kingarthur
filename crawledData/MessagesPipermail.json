@@ -1,0 +1,359 @@
+{
+  "took": 7,
+  "timed_out": false,
+  "_shards": {
+    "total": 5,
+    "successful": 5,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": 120,
+    "max_score": 0.39688137,
+    "hits": [
+      {
+        "_index": "items",
+        "_type": "items",
+        "_id": "51da855e31202f52dc003249f2f6c8d2ebb53826",
+        "_score": 0.39688137,
+        "_source": {
+          "timestamp": 1573333230.081518,
+          "classified_fields_filtered": null,
+          "category": "message",
+          "job_id": "5ab2b9bb-4695-436c-a49f-dd114d3bd1a9",
+          "uuid": "51da855e31202f52dc003249f2f6c8d2ebb53826",
+          "arthur_version": "0.1.18",
+          "origin": "https://lists.linuxfoundation.org/pipermail/grimoirelab-discussions/",
+          "backend_version": "0.10.0",
+          "perceval_version": "0.12.24",
+          "tag": "https://lists.linuxfoundation.org/pipermail/grimoirelab-discussions/",
+          "backend_name": "Pipermail",
+          "search_fields": {
+            "item_id": "<a9ad1f8fe8b8bca30ff58b98942d853bd6004524.camel@bitergia.com>"
+          },
+          "data": {
+            "References": "<3c4cbc139f31973d31e70b48d38194ed15a24136.camel@bitergia.com>",
+            "In-Reply-To": "<3c4cbc139f31973d31e70b48d38194ed15a24136.camel@bitergia.com>",
+            "unixfrom": "jgb at bitergia.com  Fri Feb 22 10:54:33 2019",
+            "Date": "Fri, 22 Feb 2019 11:54:33 +0100",
+            "From": "jgb at bitergia.com (Jesus M. Gonzalez-Barahona)",
+            "Subject": "[GrimoireLab-disc] Proposal for a new module in GrimoireLab:\n Graal",
+            "Message-ID": "<a9ad1f8fe8b8bca30ff58b98942d853bd6004524.camel@bitergia.com>",
+            "body": {
+              "plain": "If I'm not wrong, this proposal got four +1 by maintainers, and no 0 or\n-1, so we will be moving the repo to chaoss/grimoirelab-graal asap.\n\nSaludos,\n\n\tJesus.\n\nOn Wed, 2019-01-30 at 10:47 +0100, Jesus M. Gonzalez-Barahona wrote:\n> Hi all,\n> \n> This message is a formal proposal for adding Graal as a new module,\n> part of GrimoireLab.\n> \n> Graal currently lives at https://github.com/Bitergia/Graal\n> \n> Graal works with data from Perceval, and produces data that can be\n> easily consumed by GrimoireELK and the rest of the GrimoireLab\n> pipeline. Graal adds for the first time to GrimoireLab capabilities\n> related to source code analysis and licensing analysis, by running\n> third party tools.\n> \n> Some more information about Graal (from its README) below.\n> \n> Please, let us know if you support this proposal or not.\n> \n> Saludos,\n> \n> \tJesus.\n> \n> --------------------------------------------\n> Graal: a Generic Repository AnALyzer Build Status Coverage Status\n> \n> Graal leverages on the Git backend of Perceval and enhances it to set\n> up ad-hoc source code analysis. Thus, it fetches the commits from a\n> Git\n> repository and provides a mechanism to plug third party\n> tools/libraries\n> focused on source code analysis.\n> \n> How it works\n> \n> The Perceval Git backend creates a local mirror of a Git repository\n> (local or remote), fetches the metadata of commits in chronological\n> order and returns them as a list of JSON documents (one per commit).\n> Graal leverages on the incremental functionalities provided by the\n> Git\n> backend and enhances the logic to handle Git repositories by creating\n> a\n> working tree to perform checkout operations (which are not possible\n> on\n> a Git mirror). Graal intercepts each JSON document and enables the\n> user\n> to perform the following steps:\n> \n> * Filter. The filtering is used to select or discard commits based on\n> the information available in the JSON document and/or via the Graal\n> parameters. For any selected commit, Graal executes a checkout on the\n> working tree using the commit hash, thus setting the state of the\n> working tree at that given revision.\n> \n> * Analyze. The analysis takes the JSON document and the current\n> working\n> tree and enables the user to set up ad-hoc source code analysis by\n> plugging existing tools through system calls or their Python\n> interfaces, when possible. The results of the analysis are parsed and\n> manipulated by the user and then automatically embedded in the JSON\n> document. It is worth noting that in this step the user can rely on\n> some predefined functionalities of Graal to deal with the repository\n> snapshot (e.g., listing files, creating archives).\n> \n> * Post-process. In the final step, the inflated JSON document can be\n> optionally processed to alter (e.g., renaming, removing) its\n> attributes, thus granting the user complete control over the output\n> of\n> Graal executions.\n> \n> Several parameters (inherited from the Git backend) are available to\n> control the execution; for instance, from_date and to_date allow to\n> select commits authored since and before a given date, branches\n> allows\n> to fetch commits only from specific branches, and latest_items\n> returns\n> only those commits which are new since the last fetch operation.\n> Graal\n> includes additional parameters to drive the analysis to filter in/out\n> files and directories in the repository (in_paths and out_paths), set\n> the entrypoint and define the details level of the analysis (useful\n> when analyzing large software projects).\n> \n> \n-- \nBitergia: http://bitergia.com\n/me at Twitter: https://twitter.com/jgbarah\n\n\n"
+            }
+          },
+          "updated_on": 1550832873
+        }
+      },
+      {
+        "_index": "items",
+        "_type": "items",
+        "_id": "e6975367f86863b3f11fd2dae5b88a87225d3112",
+        "_score": 0.39688137,
+        "_source": {
+          "timestamp": 1573333230.096718,
+          "classified_fields_filtered": null,
+          "category": "message",
+          "job_id": "5ab2b9bb-4695-436c-a49f-dd114d3bd1a9",
+          "uuid": "e6975367f86863b3f11fd2dae5b88a87225d3112",
+          "arthur_version": "0.1.18",
+          "origin": "https://lists.linuxfoundation.org/pipermail/grimoirelab-discussions/",
+          "backend_version": "0.10.0",
+          "perceval_version": "0.12.24",
+          "tag": "https://lists.linuxfoundation.org/pipermail/grimoirelab-discussions/",
+          "backend_name": "Pipermail",
+          "search_fields": {
+            "item_id": "<CAJXZ-ensHmHkR3ANbFA8yQyoU54xLDWvyN3MEF5ErS0FgXGBGA@mail.gmail.com>"
+          },
+          "data": {
+            "References": "<715573e8c4e0e3af56dd22d34d92453686199b02.camel@bitergia.com>",
+            "In-Reply-To": "<715573e8c4e0e3af56dd22d34d92453686199b02.camel@bitergia.com>",
+            "unixfrom": "inishchith at gmail.com  Tue May  7 14:31:25 2019",
+            "Date": "Tue, 7 May 2019 20:01:25 +0530",
+            "From": "inishchith at gmail.com (Nishchith Shetty)",
+            "Subject": "[GrimoireLab-disc] Presenting two of the GSoC students and will\n\twork with us this year",
+            "Message-ID": "<CAJXZ-ensHmHkR3ANbFA8yQyoU54xLDWvyN3MEF5ErS0FgXGBGA@mail.gmail.com>",
+            "body": {
+              "plain": "Thanks Jesus, glad to be a part of the community and am looking forward\nworking with you guys!\n\nOn Tue, May 7, 2019, 3:17 AM Jesus M. Gonzalez-Barahona <jgb at bitergia.com>\nwrote:\n\n> Hi all,\n>\n> This message is to introduce Aniruddha Jayant Karajgi (Polaris000) and\n> Nishchith Shetty, who will work with us in two of the CHAOSS projects\n> accepted for GSoC 2019:\n>\n> * Aniruddha will work in \"Implementing Chaoss Metrics with Perceval\",\n> producing reference implementations for metrics produced by some of the\n> CHAOSS working groups, starting with the Evolution WG.\n>\n> * Nishchith will work in \"Support of Source Code Related Metrics\",\n> improving the support in Graal for metrics related to source code.\n>\n> Valerio, Pranjal (who maybe you remember as one of the GSoC 2018\n> students) and me will be their mentors. Anyone is welcome to\n> collaborate with we all in this journey.\n>\n> During the next few weeks, they will engage with our community\n> (although both of them already started this engagement long time ago),\n> and prepare for the formal start of the GSoC funded period, on may 27.\n>\n> Aniruddha, Nishchith, pleas feel free to introduce yourself in more\n> detail, if you feel like that.\n>\n> Saludos, and welcome to our community!\n>\n>         Jesus.\n>\n> --\n> Bitergia: http://bitergia.com\n> /me at Twitter: https://twitter.com/jgbarah\n>\n>\n>\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://lists.linuxfoundation.org/pipermail/grimoirelab-discussions/attachments/20190507/830e7305/attachment.html>\n"
+            }
+          },
+          "updated_on": 1557239485
+        }
+      },
+      {
+        "_index": "items",
+        "_type": "items",
+        "_id": "e8afd0724aaffe0ac5c2bedfb860dd31dc71b6ee",
+        "_score": 0.39688137,
+        "_source": {
+          "timestamp": 1573333230.097802,
+          "classified_fields_filtered": null,
+          "category": "message",
+          "job_id": "5ab2b9bb-4695-436c-a49f-dd114d3bd1a9",
+          "uuid": "e8afd0724aaffe0ac5c2bedfb860dd31dc71b6ee",
+          "arthur_version": "0.1.18",
+          "origin": "https://lists.linuxfoundation.org/pipermail/grimoirelab-discussions/",
+          "backend_version": "0.10.0",
+          "perceval_version": "0.12.24",
+          "tag": "https://lists.linuxfoundation.org/pipermail/grimoirelab-discussions/",
+          "backend_name": "Pipermail",
+          "search_fields": {
+            "item_id": "<b1c46315f4be5d2ee56079934e328201ace2481a.camel@bitergia.com>"
+          },
+          "data": {
+            "References": "<CAGaP0dhcO-novRxnO5ecqvgSh-6YPtx+Ye_PwA06pCgZ20LP_Q@mail.gmail.com>",
+            "unixfrom": "jgb at bitergia.com  Wed May 15 12:26:36 2019",
+            "Date": "Wed, 15 May 2019 14:26:36 +0200",
+            "From": "jgb at bitergia.com (Jesus M. Gonzalez-Barahona)",
+            "Subject": "[GrimoireLab-disc] [Fwd: [CHAOSS] CFP for CHAOSScon North America\n\t(August 20, 2019)]",
+            "Message-ID": "<b1c46315f4be5d2ee56079934e328201ace2481a.camel@bitergia.com>",
+            "body": {
+              "plain": "FYI. Please, remember that GrimoireLab is a CHAOSS project, and as\nsuch, presentations on GrimoireLab are a perfect fit for CHAOSSCon.\n\nSaludos,\n\n\tJesus.\n\n-- \nBitergia: http://bitergia.com\n/me at Twitter: https://twitter.com/jgbarah\n\n-------------- next part --------------\nAn embedded message was scrubbed...\nFrom: Georg Link <linkgeorg at gmail.com>\nSubject: [CHAOSS] CFP for CHAOSScon North America (August 20, 2019)\nDate: Tue, 14 May 2019 11:26:48 -0500\nSize: 52615\nURL: <http://lists.linuxfoundation.org/pipermail/grimoirelab-discussions/attachments/20190515/4175388a/attachment-0001.mht>\n"
+            }
+          },
+          "updated_on": 1557923196
+        }
+      },
+      {
+        "_index": "items",
+        "_type": "items",
+        "_id": "bd65ae4af34ba3abd1c77a305bc4caa68d88fb8a",
+        "_score": 0.39688137,
+        "_source": {
+          "timestamp": 1573333230.099955,
+          "classified_fields_filtered": null,
+          "category": "message",
+          "job_id": "5ab2b9bb-4695-436c-a49f-dd114d3bd1a9",
+          "uuid": "bd65ae4af34ba3abd1c77a305bc4caa68d88fb8a",
+          "arthur_version": "0.1.18",
+          "origin": "https://lists.linuxfoundation.org/pipermail/grimoirelab-discussions/",
+          "backend_version": "0.10.0",
+          "perceval_version": "0.12.24",
+          "tag": "https://lists.linuxfoundation.org/pipermail/grimoirelab-discussions/",
+          "backend_name": "Pipermail",
+          "search_fields": {
+            "item_id": "<CA+2xiF=os=PMGw=Yi-8HQ7tH1vMuvXJaLCqkdvV9tR3rVe5=dg@mail.gmail.com>"
+          },
+          "data": {
+            "unixfrom": "akarajgi0 at gmail.com  Sun May 19 03:15:30 2019",
+            "Date": "Sun, 19 May 2019 08:45:30 +0530",
+            "From": "akarajgi0 at gmail.com (Aniruddha Karajgi)",
+            "Subject": "[GrimoireLab-disc] [GSoC-Update] First community-bonding meeting\n\tlog and blog post",
+            "Message-ID": "<CA+2xiF=os=PMGw=Yi-8HQ7tH1vMuvXJaLCqkdvV9tR3rVe5=dg@mail.gmail.com>",
+            "body": {
+              "plain": "Hi everyone! As decided with the mentors of my project (Jesus, Valerio\nand Pranjal), this is a weekly update with the meeting log and\ncorresponding blog post for the first community bonding meet we had on\n#grimoirelab channel (freenode IRC).\n\nAlso, regular post updates will be added as comments to the following\nissue in governance repository:\nhttps://github.com/chaoss/governance/issues/135\n\nOther links are below:\n- post:\nhttps://polaris000.github.io/blog/com_bonding_1\n\n- meeting log: https://github.com/Polaris000/GSoC_19_Perceval_Implementations/blob/master/IRC_chats/may_16_comm_bonding.txt\n"
+            }
+          },
+          "updated_on": 1558235730
+        }
+      },
+      {
+        "_index": "items",
+        "_type": "items",
+        "_id": "020c52d76058f8f02bc7a14f9bb8a0c105ebb652",
+        "_score": 0.39688137,
+        "_source": {
+          "timestamp": 1573333230.105687,
+          "classified_fields_filtered": null,
+          "category": "message",
+          "job_id": "5ab2b9bb-4695-436c-a49f-dd114d3bd1a9",
+          "uuid": "020c52d76058f8f02bc7a14f9bb8a0c105ebb652",
+          "arthur_version": "0.1.18",
+          "origin": "https://lists.linuxfoundation.org/pipermail/grimoirelab-discussions/",
+          "backend_version": "0.10.0",
+          "perceval_version": "0.12.24",
+          "tag": "https://lists.linuxfoundation.org/pipermail/grimoirelab-discussions/",
+          "backend_name": "Pipermail",
+          "search_fields": {
+            "item_id": "<CA+2xiFkMeTPt7j1J5VCKBSD3r0DGbaQ0SsMAxOXV+a3bVhyHhg@mail.gmail.com>"
+          },
+          "data": {
+            "References": "<CA+2xiFkSq3ipCSBEEV0cHdtv8wj1qcThTnpkTz9xnj4Oh0WCAA@mail.gmail.com>\n\t<CADFygWgETfDi5z9p4mMzSqQLkqufGhNxT1gLC-Fj1te0RW74sQ@mail.gmail.com>\n\t<CAGaP0difDJRNfbhOJ=-CEi4jj_LN496-zLCPQUci1PXf1bSJLw@mail.gmail.com>\n\t<CA+2xiFmOkN2L-QokEEoFH4Qdy1zL-JLW8TUME831Z7xDNGi+1Q@mail.gmail.com>\n\t<CAGaP0dik+qXLGKasOvKBZcHN0hgiCxMBmMUbMv-28Tsr6FWZ1A@mail.gmail.com>",
+            "In-Reply-To": "<CAGaP0dik+qXLGKasOvKBZcHN0hgiCxMBmMUbMv-28Tsr6FWZ1A@mail.gmail.com>",
+            "unixfrom": "akarajgi0 at gmail.com  Mon May 27 15:39:12 2019",
+            "Date": "Mon, 27 May 2019 21:09:12 +0530",
+            "From": "akarajgi0 at gmail.com (Aniruddha Karajgi)",
+            "Subject": "[GrimoireLab-disc] [CHAOSS] [GSoC] Second community-bonding\n\tmeeting log and blog post",
+            "Message-ID": "<CA+2xiFkMeTPt7j1J5VCKBSD3r0DGbaQ0SsMAxOXV+a3bVhyHhg@mail.gmail.com>",
+            "body": {
+              "plain": "No probs!\nThe disqus comments and votes panel take longer to load than the rest of\nthe page, which is probably the main problem here....\n\nThanks for the upvote!\n\nOn Mon, May 27, 2019, 9:05 PM Georg Link <linkgeorg at gmail.com> wrote:\n\n> Done. I didn't see the up-vote feature. Thanks for pointing that out.\n>\n> On Mon, May 27, 2019 at 5:28 PM Aniruddha Karajgi <akarajgi0 at gmail.com>\n> wrote:\n>\n>> Hi Georg and Matt!\n>> Really appreciate your response!\n>>\n>> Please up-vote the post if you like it!\n>>\n>> On Sun, May 26, 2019 at 4:12 AM Georg Link <linkgeorg at gmail.com> wrote:\n>>\n>>> Thanks Aniruddha,\n>>>\n>>> It looks like you are ready to start with your project. Looking forward\n>>> to your updates over the next weeks.\n>>>\n>>> Best,\n>>> Georg\n>>>\n>>> On Sat, May 25, 2019 at 5:32 AM Matt Germonprez <germonprez at gmail.com>\n>>> wrote:\n>>>\n>>>> Thanks Aniruddha,\n>>>>\n>>>> I look forward to reading about your work over the summer.\n>>>>\n>>>> Matt\n>>>>\n>>>>\n>>>> On Sat, May 25, 2019 at 3:37 AM Aniruddha Karajgi <akarajgi0 at gmail.com>\n>>>> wrote:\n>>>>\n>>>>> Hi everyone! As decided with the mentors of my project (Jesus, Valerio\n>>>>> and Pranjal), this is a weekly update with the meeting log\n>>>>> and corresponding blog post for the second community bonding meet we had\n>>>>> on #grimoirelab channel (freenode IRC) on the 24th of May.\n>>>>>\n>>>>> Also, regular post updates will be added as comments to the following\n>>>>> issue in governance repository:\n>>>>> https://github.com/chaoss/governance/issues/135\n>>>>>\n>>>>> Other links are below:\n>>>>> - post:\n>>>>> https://polaris000.github.io/blog/com_bonding_2\n>>>>>\n>>>>> - meeting log:\n>>>>> https://github.com/Polaris000/GSoC_19_Perceval_Implementations/blob/master/IRC_chats/may_24_comm_bonding.txt\n>>>>>\n>>>>> --\n>>>>>\n>>>>> *Aniruddha Karajgi*\n>>>>>\n>>>>>\n>>>>> _______________________________________________\n>>>>> CHAOSS mailing list\n>>>>> CHAOSS at lists.linuxfoundation.org\n>>>>> https://lists.linuxfoundation.org/mailman/listinfo/chaoss\n>>>>>\n>>>>\n>>>>\n>>>> --\n>>>> Mutual of Omaha Associate Professor\n>>>> Information Systems\n>>>> College of Information Science & Technology\n>>>> University of Nebraska Omaha\n>>>> he / him / his\n>>>> https://goo.gl/E87KdK\n>>>>\n>>>> _______________________________________________\n>>>> CHAOSS mailing list\n>>>> CHAOSS at lists.linuxfoundation.org\n>>>> https://lists.linuxfoundation.org/mailman/listinfo/chaoss\n>>>>\n>>>\n>>\n>> --\n>>\n>> *Aniruddha Karajgi*\n>>\n>>\n>>\n>\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://lists.linuxfoundation.org/pipermail/grimoirelab-discussions/attachments/20190527/850e09bb/attachment-0001.html>\n"
+            }
+          },
+          "updated_on": 1558971552
+        }
+      },
+      {
+        "_index": "items",
+        "_type": "items",
+        "_id": "19cd04aadf3755b4fc158c11d60573bced0f4d3f",
+        "_score": 0.39688137,
+        "_source": {
+          "timestamp": 1573333230.118387,
+          "classified_fields_filtered": null,
+          "category": "message",
+          "job_id": "5ab2b9bb-4695-436c-a49f-dd114d3bd1a9",
+          "uuid": "19cd04aadf3755b4fc158c11d60573bced0f4d3f",
+          "arthur_version": "0.1.18",
+          "origin": "https://lists.linuxfoundation.org/pipermail/grimoirelab-discussions/",
+          "backend_version": "0.10.0",
+          "perceval_version": "0.12.24",
+          "tag": "https://lists.linuxfoundation.org/pipermail/grimoirelab-discussions/",
+          "backend_name": "Pipermail",
+          "search_fields": {
+            "item_id": "<CAJXZ-ek7gXw4vD-6_nf3JeY+tXUsh7s6LazqmCBS4izMvwnVpQ@mail.gmail.com>"
+          },
+          "data": {
+            "unixfrom": "inishchith at gmail.com  Fri Jun  7 16:12:14 2019",
+            "Date": "Fri, 7 Jun 2019 21:42:14 +0530",
+            "From": "inishchith at gmail.com (Nishchith Shetty)",
+            "Subject": "[GrimoireLab-disc] [GSoC] Weekly: Blogpost on 2nd Meeting for\n\tCoding Phase-1",
+            "Message-ID": "<CAJXZ-ek7gXw4vD-6_nf3JeY+tXUsh7s6LazqmCBS4izMvwnVpQ@mail.gmail.com>",
+            "body": {
+              "plain": "Hi everyone!\nThis is a weekly update for the second meeting for the first phase of the\ncoding period that I had with my mentors on the *#grimoirelab* channel\n(Freenode IRC) today.\n\n*Blog Post Link:*\nhttps://inishchith.github.io/blog/2019/06/coding-period-1-2.html\n\n*Note:  *I've attached the IRC meeting log in the footnotes section of the\nblog\n\nThanks!\n\n-- \nRegards,\nNishchith Shetty\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://lists.linuxfoundation.org/pipermail/grimoirelab-discussions/attachments/20190607/4de8c60b/attachment.html>\n"
+            }
+          },
+          "updated_on": 1559923934
+        }
+      },
+      {
+        "_index": "items",
+        "_type": "items",
+        "_id": "9da93bf5fa3cdd896fd869902f22d34c2f9320d5",
+        "_score": 0.39688137,
+        "_source": {
+          "timestamp": 1573333230.136091,
+          "classified_fields_filtered": null,
+          "category": "message",
+          "job_id": "5ab2b9bb-4695-436c-a49f-dd114d3bd1a9",
+          "uuid": "9da93bf5fa3cdd896fd869902f22d34c2f9320d5",
+          "arthur_version": "0.1.18",
+          "origin": "https://lists.linuxfoundation.org/pipermail/grimoirelab-discussions/",
+          "backend_version": "0.10.0",
+          "perceval_version": "0.12.24",
+          "tag": "https://lists.linuxfoundation.org/pipermail/grimoirelab-discussions/",
+          "backend_name": "Pipermail",
+          "search_fields": {
+            "item_id": "<CA+2xiF=Yi89qkDQ9gPhf5gC3m3=Jqaxsb4=OKBScXwJcZUSkXA@mail.gmail.com>"
+          },
+          "data": {
+            "unixfrom": "akarajgi0 at gmail.com  Sat Jun 29 12:00:51 2019",
+            "Date": "Sat, 29 Jun 2019 17:30:51 +0530",
+            "From": "akarajgi0 at gmail.com (Aniruddha Karajgi)",
+            "Subject": "[GrimoireLab-disc] [GSoC] Evaluation 1 blog post and IRC meeting log",
+            "Message-ID": "<CA+2xiF=Yi89qkDQ9gPhf5gC3m3=Jqaxsb4=OKBScXwJcZUSkXA@mail.gmail.com>",
+            "body": {
+              "plain": "This is a weekly update with the meeting log and corresponding blog post\nfor the meet we had on #grimoirelab channel (freenode IRC) on the 28th of\nJune.\n\nAlso, regular post updates will be added as comments to the following\nissue in governance repository:\nhttps://github.com/chaoss/governance/issues/135\n\nOther links are below:\n- post:\nhttps://polaris000.github.io/blog/eval_1eval_1\n\n- meeting log:\nhttps://github.com/Polaris000/GSoC_19_Perceval_Implementations/blob/master/IRC_chats/june_28_eval1.txt\n\nAll GSoC related posts can be found here:\nhttps://polaris000.github.io/tags/GSoC\n\nPlease upvote if you liked the post!\nThanks!\n\n-- \n\n*Aniruddha Karajgi*\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://lists.linuxfoundation.org/pipermail/grimoirelab-discussions/attachments/20190629/ce6f8b69/attachment.html>\n"
+            }
+          },
+          "updated_on": 1561809651
+        }
+      },
+      {
+        "_index": "items",
+        "_type": "items",
+        "_id": "2942ba4e399889d300b456a9e6491f0934ceab20",
+        "_score": 0.39688137,
+        "_source": {
+          "timestamp": 1573333230.137214,
+          "classified_fields_filtered": null,
+          "category": "message",
+          "job_id": "5ab2b9bb-4695-436c-a49f-dd114d3bd1a9",
+          "uuid": "2942ba4e399889d300b456a9e6491f0934ceab20",
+          "arthur_version": "0.1.18",
+          "origin": "https://lists.linuxfoundation.org/pipermail/grimoirelab-discussions/",
+          "backend_version": "0.10.0",
+          "perceval_version": "0.12.24",
+          "tag": "https://lists.linuxfoundation.org/pipermail/grimoirelab-discussions/",
+          "backend_name": "Pipermail",
+          "search_fields": {
+            "item_id": "<CADFygWgVikgjmPXHpRD3B2J_+KoudN+UmYndPnBWDMbU_MVKhg@mail.gmail.com>"
+          },
+          "data": {
+            "References": "<CA+2xiF=Yi89qkDQ9gPhf5gC3m3=Jqaxsb4=OKBScXwJcZUSkXA@mail.gmail.com>",
+            "In-Reply-To": "<CA+2xiF=Yi89qkDQ9gPhf5gC3m3=Jqaxsb4=OKBScXwJcZUSkXA@mail.gmail.com>",
+            "unixfrom": "germonprez at gmail.com  Sat Jun 29 13:13:12 2019",
+            "Date": "Sat, 29 Jun 2019 08:13:12 -0500",
+            "From": "germonprez at gmail.com (Matt Germonprez)",
+            "Subject": "[GrimoireLab-disc] [CHAOSS] [GSoC] Evaluation 1 blog post and\n\tIRC meeting log",
+            "Message-ID": "<CADFygWgVikgjmPXHpRD3B2J_+KoudN+UmYndPnBWDMbU_MVKhg@mail.gmail.com>",
+            "body": {
+              "plain": "Thanks for the post Aniruddha. The work looks great :)\n\nMatt\n\nOn Sat, Jun 29, 2019 at 7:03 AM Aniruddha Karajgi <akarajgi0 at gmail.com>\nwrote:\n\n> This is a weekly update with the meeting log and corresponding blog post\n> for the meet we had on #grimoirelab channel (freenode IRC) on the 28th of\n> June.\n>\n> Also, regular post updates will be added as comments to the following\n> issue in governance repository:\n> https://github.com/chaoss/governance/issues/135\n>\n> Other links are below:\n> - post:\n> https://polaris000.github.io/blog/eval_1eval_1\n>\n> - meeting log:\n> https://github.com/Polaris000/GSoC_19_Perceval_Implementations/blob/master/IRC_chats/june_28_eval1.txt\n>\n> All GSoC related posts can be found here:\n> https://polaris000.github.io/tags/GSoC\n>\n> Please upvote if you liked the post!\n> Thanks!\n>\n> --\n>\n> *Aniruddha Karajgi*\n>\n>\n> _______________________________________________\n> CHAOSS mailing list\n> CHAOSS at lists.linuxfoundation.org\n> https://lists.linuxfoundation.org/mailman/listinfo/chaoss\n>\n\n\n-- \nMutual of Omaha Associate Professor\nInformation Systems\nCollege of Information Science & Technology\nUniversity of Nebraska Omaha\nhe / him / his\nhttps://goo.gl/E87KdK\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://lists.linuxfoundation.org/pipermail/grimoirelab-discussions/attachments/20190629/fe46171a/attachment.html>\n"
+            }
+          },
+          "updated_on": 1561813992
+        }
+      },
+      {
+        "_index": "items",
+        "_type": "items",
+        "_id": "0d57f9aa226a843d6fa0e6bb848e0d420837974d",
+        "_score": 0.39688137,
+        "_source": {
+          "timestamp": 1573333230.145154,
+          "classified_fields_filtered": null,
+          "category": "message",
+          "job_id": "5ab2b9bb-4695-436c-a49f-dd114d3bd1a9",
+          "uuid": "0d57f9aa226a843d6fa0e6bb848e0d420837974d",
+          "arthur_version": "0.1.18",
+          "origin": "https://lists.linuxfoundation.org/pipermail/grimoirelab-discussions/",
+          "backend_version": "0.10.0",
+          "perceval_version": "0.12.24",
+          "tag": "https://lists.linuxfoundation.org/pipermail/grimoirelab-discussions/",
+          "backend_name": "Pipermail",
+          "search_fields": {
+            "item_id": "<CAGaP0dheHP-0HWFMKPbT83DGSws-nDn5iTuKHmw2+tQeAK+4gg@mail.gmail.com>"
+          },
+          "data": {
+            "References": "<CAJXZ-em3chZspG+TD0q2kTs7ZQKFcWAdUjYuJQb9O3iLQSMeJw@mail.gmail.com>",
+            "In-Reply-To": "<CAJXZ-em3chZspG+TD0q2kTs7ZQKFcWAdUjYuJQb9O3iLQSMeJw@mail.gmail.com>",
+            "unixfrom": "linkgeorg at gmail.com  Fri Jul  5 16:52:23 2019",
+            "Date": "Fri, 5 Jul 2019 11:52:23 -0500",
+            "From": "linkgeorg at gmail.com (Georg Link)",
+            "Subject": "[GrimoireLab-disc] [CHAOSS] [GSoC] Weekly: Blogpost on 6th\n\tMeeting for Coding Phase",
+            "Message-ID": "<CAGaP0dheHP-0HWFMKPbT83DGSws-nDn5iTuKHmw2+tQeAK+4gg@mail.gmail.com>",
+            "body": {
+              "plain": "Thanks for sharing Nishchith,\n\nIt's great to see your progress.\n\nYou link to the dashboard and visualizations posted on issues.\nI think including a screenshot or two in your blog post, highlighting your\nvisualization work, would be nice. Then I don't have to leave your blog\npost to see what you have been working on.\n\nBest,\nGeorg\n\nOn Fri, Jul 5, 2019 at 11:47 AM Nishchith Shetty <inishchith at gmail.com>\nwrote:\n\n> Hi everyone!\n> This is a weekly update for the sixth meeting for the coding period that I\n> had with my mentors on the *#grimoirelab* channel (Freenode IRC) today.\n>\n> Blog Post Link:\n> https://inishchith.github.io/blog/2019/07/coding-period-2-6.html\n>\n> Note:\n> + I've attached the IRC meeting log in the footnotes section of the blog\n> + Consider leaving a comment for suggestions or upvote if you like it :)\n>\n> Thanks!\n>\n> --\n> Regards,\n> Nishchith Shetty\n>\n> _______________________________________________\n> CHAOSS mailing list\n> CHAOSS at lists.linuxfoundation.org\n> https://lists.linuxfoundation.org/mailman/listinfo/chaoss\n>\n\n\n-- \nGeorg Link, PhD\n(he/him)\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://lists.linuxfoundation.org/pipermail/grimoirelab-discussions/attachments/20190705/5c629b40/attachment.html>\n"
+            }
+          },
+          "updated_on": 1562345543
+        }
+      },
+      {
+        "_index": "items",
+        "_type": "items",
+        "_id": "195bc881a5d3c42d1586388e0829f7abc33f73b9",
+        "_score": 0.39688137,
+        "_source": {
+          "timestamp": 1573333230.146297,
+          "classified_fields_filtered": null,
+          "category": "message",
+          "job_id": "5ab2b9bb-4695-436c-a49f-dd114d3bd1a9",
+          "uuid": "195bc881a5d3c42d1586388e0829f7abc33f73b9",
+          "arthur_version": "0.1.18",
+          "origin": "https://lists.linuxfoundation.org/pipermail/grimoirelab-discussions/",
+          "backend_version": "0.10.0",
+          "perceval_version": "0.12.24",
+          "tag": "https://lists.linuxfoundation.org/pipermail/grimoirelab-discussions/",
+          "backend_name": "Pipermail",
+          "search_fields": {
+            "item_id": "<CAJXZ-en6kgo7fgT9dCPn2CHcKboR+X3ngGLR_bQ1vwJM7O1XXA@mail.gmail.com>"
+          },
+          "data": {
+            "References": "<CAJXZ-em3chZspG+TD0q2kTs7ZQKFcWAdUjYuJQb9O3iLQSMeJw@mail.gmail.com>\n\t<CAGaP0dheHP-0HWFMKPbT83DGSws-nDn5iTuKHmw2+tQeAK+4gg@mail.gmail.com>",
+            "In-Reply-To": "<CAGaP0dheHP-0HWFMKPbT83DGSws-nDn5iTuKHmw2+tQeAK+4gg@mail.gmail.com>",
+            "unixfrom": "inishchith at gmail.com  Fri Jul  5 17:03:53 2019",
+            "Date": "Fri, 5 Jul 2019 22:33:53 +0530",
+            "From": "inishchith at gmail.com (Nishchith Shetty)",
+            "Subject": "[GrimoireLab-disc] [CHAOSS] [GSoC] Weekly: Blogpost on 6th\n\tMeeting for Coding Phase",
+            "Message-ID": "<CAJXZ-en6kgo7fgT9dCPn2CHcKboR+X3ngGLR_bQ1vwJM7O1XXA@mail.gmail.com>",
+            "body": {
+              "plain": "Hi Georg,\n\nThanks for the suggestion, I'll update the blog-post :)\n\nOn Fri, Jul 5, 2019 at 10:23 PM Georg Link <linkgeorg at gmail.com> wrote:\n\n> Thanks for sharing Nishchith,\n>\n> It's great to see your progress.\n>\n> You link to the dashboard and visualizations posted on issues.\n> I think including a screenshot or two in your blog post, highlighting your\n> visualization work, would be nice. Then I don't have to leave your blog\n> post to see what you have been working on.\n>\n> Best,\n> Georg\n>\n> On Fri, Jul 5, 2019 at 11:47 AM Nishchith Shetty <inishchith at gmail.com>\n> wrote:\n>\n>> Hi everyone!\n>> This is a weekly update for the sixth meeting for the coding period that\n>> I had with my mentors on the *#grimoirelab* channel (Freenode IRC) today.\n>>\n>> Blog Post Link:\n>> https://inishchith.github.io/blog/2019/07/coding-period-2-6.html\n>>\n>> Note:\n>> + I've attached the IRC meeting log in the footnotes section of the blog\n>> + Consider leaving a comment for suggestions or upvote if you like it :)\n>>\n>> Thanks!\n>>\n>> --\n>> Regards,\n>> Nishchith Shetty\n>>\n>> _______________________________________________\n>> CHAOSS mailing list\n>> CHAOSS at lists.linuxfoundation.org\n>> https://lists.linuxfoundation.org/mailman/listinfo/chaoss\n>>\n>\n>\n> --\n> Georg Link, PhD\n> (he/him)\n>\n\n\n-- \nRegards,\nNishchith Shetty\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://lists.linuxfoundation.org/pipermail/grimoirelab-discussions/attachments/20190705/975b172f/attachment.html>\n"
+            }
+          },
+          "updated_on": 1562346233
+        }
+      }
+    ]
+  }
+}

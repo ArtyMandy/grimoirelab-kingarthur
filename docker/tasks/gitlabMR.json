@@ -1,0 +1,21 @@
+{
+    "tasks": [
+{
+    "task_id": "fdroidMR.gitlab",
+    "backend": "gitlab",
+    "backend_args": {
+        "api_token": "V-NanZyQnVP-PaPMRCXY",
+        "owner": "fdroid",
+        "repository": "fdroiddata",
+        "from_date": "2019-10-25",
+        "sleep_for_rate": "false",
+        "archive": "archive"
+    },
+    "category": "merge_request",
+    "scheduler": {
+        "delay": 1,
+        "max_retries":5
+    }
+}
+]
+}
