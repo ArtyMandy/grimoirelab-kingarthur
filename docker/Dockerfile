@@ -61,7 +61,7 @@ USER arthur
 
 RUN \
   mkdir /arthur/logs && \
-  pip3 install setuptools && \
+  pip3 install setuptools==41.6.0 && \
   pip3 install --no-cache-dir --user -r requirements.txt && \
   python3 setup.py install --user
 
